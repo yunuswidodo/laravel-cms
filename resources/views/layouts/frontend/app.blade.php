@@ -33,7 +33,15 @@
 
 
     
-	<!-- SCIPTS -->
+
+</head>
+<body>
+  
+	@include('layouts.frontend.partial.header')
+    @yield('content')
+    @include('layouts.frontend.partial.footer')
+
+    	<!-- SCIPTS -->
 
 	<script src="{{asset('assets/frontend/js/jquery-3.1.1.min.js')}}"></script>
 
@@ -44,12 +52,5 @@
 	<script src="{{asset('assets/frontend/js/scripts.js')}}"></script>
 
     @stack('js')
-</head>
-<body>
-  
-	@include('layouts.frontend.partial.header')
-    @yield('content')
-    @include('layouts.frontend.partial.footer')
-
 </body>
 </html>
